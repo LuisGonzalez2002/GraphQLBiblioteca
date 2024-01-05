@@ -4,7 +4,6 @@ type Query{
 type Autor{
     idAutor: ID!
     nombreCompleto: String!
-    libros: [Libro]
 }
 type Libro{
     idLibro: ID!

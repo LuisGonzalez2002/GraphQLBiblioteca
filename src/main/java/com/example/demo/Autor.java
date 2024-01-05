@@ -2,15 +2,9 @@ package com.example.demo;
 
 import jakarta.persistence.*;
 
-import java.time.OffsetDateTime;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 
@@ -38,6 +32,4 @@ public class Autor {
     @Column(nullable = false)
     private String nombreCompleto;
 
-    @OneToMany(mappedBy = "autor", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Libro> libros = new ArrayList<>();
 }
