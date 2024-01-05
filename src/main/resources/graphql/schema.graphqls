@@ -1,9 +1,9 @@
 type Query{
+
     autores: [Autor]
     autorById(idAutor: ID!): Autor
     libros: [Libro]
-    libroById(idLibro: ID!): Libro
-}
+    libroPorID(idLibro: ID!): Libro}
 type Autor{
     idAutor: ID!
     nombreCompleto: String!
