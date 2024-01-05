@@ -1,6 +1,8 @@
 type Query{
     autores: [Autor]
-    autorById(id: ID!): Autor
+    autorById(idAutor: ID!): Autor
+    libros: [Libro]
+    libroById(idLibro: ID!): Libro
 }
 type Autor{
     idAutor: ID!

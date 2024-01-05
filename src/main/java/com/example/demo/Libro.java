@@ -10,7 +10,7 @@ import lombok.Setter;
 @Table(name = "Libro")
 public class Libro {
     @Id
-    @GeneratedValue
+    @Column(name = "idlibro")
     private Long idLibro;
     private String titulo;
     @ManyToOne(fetch = FetchType.LAZY)
