@@ -13,6 +13,7 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 public class Libro {
     @Id
     @Column(name = "idlibro")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idLibro;
     private String titulo;
     @ManyToOne(fetch = FetchType.LAZY)

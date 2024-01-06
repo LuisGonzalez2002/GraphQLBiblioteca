@@ -3,7 +3,13 @@ type Query{
     autores: [Autor]
     autorById(idAutor: ID!): Autor
     libros: [Libro]
-    libroPorID(idLibro: ID!): Libro}
+    libroByID(idLibro: ID!): Libro
+}
+type Mutation{
+    crearAutor(nombreCompleto: String!): Autor
+    crearLibro(titulo: String!, idAutor: ID!): Libro
+}
+
 type Autor{
     idAutor: ID!
     nombreCompleto: String!

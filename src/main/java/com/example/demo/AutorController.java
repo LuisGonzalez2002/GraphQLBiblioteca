@@ -1,6 +1,7 @@
 package com.example.demo;
 
 import org.springframework.graphql.data.method.annotation.Argument;
+import org.springframework.graphql.data.method.annotation.MutationMapping;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
 import org.springframework.stereotype.Controller;
 
@@ -25,6 +26,13 @@ public class AutorController {
             throw new IllegalArgumentException("Id must not be null");
         }
         return autorRepository.findById(idAutor).orElse(null);
+    }
+
+    @MutationMapping
+    Autor crearAutor(@Argument("nombreCompleto") String nombreCompleto){
+        Autor autor = new Autor();
+        autor.setNombreCompleto(nombreCompleto);
+        return autorRepository.save(autor);
     }
 
 }

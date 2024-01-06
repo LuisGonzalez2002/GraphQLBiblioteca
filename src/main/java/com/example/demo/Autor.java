@@ -17,6 +17,7 @@ public class Autor {
 
     @Id
     @Column(name = "idautor")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idAutor;
 
     private String nombreCompleto;
