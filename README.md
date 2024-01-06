@@ -1,6 +1,8 @@
 #GraphQL
 #Autor: Luis González González
 
+https://github.com/LuisGonzalez2002/GraphQLBiblioteca.git
+
 Enunciado del Ejercicio de Programación Concurrente utilizando GraphQL:
 
 El objetivo de este ejercicio es diseñar y desarrollar un sistema de administración de biblioteca en línea que utilice GraphQL y la programación concurrente. Este sistema permitirá a los usuarios buscar libros, autores y categorías de libros. Además, los usuarios podrán hacer reservas y pedir prestados libros electrónicamente. Los administradores podrán agregar, editar y eliminar libros, autores y categorías.
